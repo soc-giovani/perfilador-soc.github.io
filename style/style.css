@@ -161,18 +161,32 @@ h2{
         width: 100% !important;
         margin: 0px !important;
     }
+    #vista-mobile{
+        display:contents;
+        margin-bottom: 25px;
+    }
+    #vista-desktop{
+        display: none;
+    }
 }
 
-@media (min-width: 768px) { 
+@media (max-width: 768px) { 
     .boton-credito{
         width: 180px;
         margin: none !important;
     }
+    #vista-mobile{
+        display:contents;
+        margin-bottom: 25px;
+    }
+    #vista-desktop{
+        display: none;
+    }
 }
 
-@media (min-width: 992px) {
+@media (max-width: 992px) {
     .boton-credito{
-        width: 220px;
+        width: 200px;
         margin: none !important;
     }
 }
