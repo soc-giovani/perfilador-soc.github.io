@@ -106,6 +106,9 @@ h2{
     margin-right: 7px;
 }
 
+#vista-mobile{
+    display: none;
+}
 
 
 /*-----------------MQ-----------------*/
@@ -123,7 +126,7 @@ h2{
         text-align: start;
     }
     .color-boton{
-        width: 80% !important;
+        width: 100% !important;
         margin: 0px !important;
     }
     .boton-aling{
@@ -132,6 +135,12 @@ h2{
     .boton-credito{
         width: 100px;
         margin: none !important;
+    }
+    #vista-mobile{
+        display:contents;
+    }
+    #vista-desktop{
+        display: none;
     }
 }
 
@@ -148,7 +157,7 @@ h2{
         margin: none !important;
     }
     .color-boton{
-        width: 80% !important;
+        width: 100% !important;
         margin: 0px !important;
     }
 }
