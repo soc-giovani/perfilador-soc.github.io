@@ -1,53 +1,173 @@
+/*---------Colores-------*/
+*{padding: 0; margin: 0;}
+:root{
+    --azul-soc: #015694;
+    --verde-soc: #4aa84f;
+    --boton: #f1f2f7;
+    --boton-seccecionado:#def4fc;
+}
 body{
     font-family: 'Open Sans';
-    background-color: red;
     text-align: center;
 }
 .container{
     margin-top: 32px;
 }
 .row{
-    margin-bottom: 45px;
+    margin-bottom: 35px;
 }
 .titulo-texto{
     color: white;
     font-weight: 600;
     text-align: center;
+    font-size: 48px;
     margin-top: 18px !important;
 }
+.header-text{
+    height: 90px;
+    margin-bottom: 45px;
+    background-color: var(--azul-soc);
+    /*-position: fixed;
+    top: 0;-*/
+}
 h2{
-    color: #015694;
+    color: var(--azul-soc);
     text-align: center;
+    font-size: 24px !important;
     margin-bottom: 22px !important;
 }
-
-.container-fluid{
-    height: 90px;
-    background-color: #015694;
+.btn-siguiente{
+    background-color: var(--boton) !important;
+    border-color: none !important;
+    width: 200px;
+   /*- margin-right: 45px -*/
+}
+.btn-siguiente:hover{
+    background-color: var(--verde-soc) !important;
+    border-color: var(--verde-soc) !important;
+    color: white !important;
+}
+.btn-siguiente-texto{
+    color: #000000;
+    font-weight: 700;;
+    text-decoration: none;
+}
+.btn-siguiente-texto:hover{
+    color: white;
+    text-decoration: none;
+}
+.btn-siguiente:active{
+    background-color: var(--verde-soc) !important;
+    border-color: var(--verde-soc) !important;
 }
 .boton-aling{
     text-align: center;
     margin-bottom: 18px;
 }
 .animacion-boton{
-    --bs-btn-color: #015694 !important;
-    --bs-btn-border-color: #015694 !important;
-    --bs-btn-hover-bg: #015694 !important;
-    --bs-btn-hover-border-color: #015694 !important;
-    --bs-btn-active-bg: #015694 !important;
-    --bs-btn-active-border-color: #015694 !important;
-    --bs-btn-disabled-color: #015694 !important;
-    --bs-btn-disabled-border-color: #015694 !important;
+    --bs-btn-color: #000000 !important;
+    --bs-btn-border-color: none !important;
+    background-color: #f1f2f7 !important;
+    --bs-btn-border-color: #f1f1f1 !important;
+    --bs-btn-hover-bg: #000000 !important;
+    --bs-btn-hover-border-color: #def4fc !important;
+    --bs-btn-active-bg: var(--azul-soc) !important;
+    --bs-btn-active-border-color: var(--azul-soc) !important;
+    --bs-btn-active-color: #000000 !important;
     font-size: 12px !important;
+    /*--width:230px;--*/
 }
-.form-control{
-    width: 80% !important;
+.animacion-boton:active{
+    background-color: var(--boton-seccecionado);
+}
+.animacion-boton:hover{
+    background-color: var(--boton-seccecionado);
+    color: black !important;
+    border-color: var(--azul-soc) !important;
+}
+.color-boton{
+    width: 50% !important;
     margin: auto;
+    background-color: var(--boton) !important;
+    border-color: white !important;
 }
+.boton-credito{
+    width: 300px;
+    margin: none !important;
+}
+
+/*------estilos en tipo de persona------*/
+.btn-regresar{
+    text-decoration: none;
+    color: var(--azul-soc);
+    font-weight: 200;
+    font-size: 22px;
+}
+
+
+
 /*-----------------MQ-----------------*/
 @media  (max-width: 400px){
-    .btn-prymary{
-        width: inherit;
-        color: red;
+    h1{
+        font-size: 22px !important;
     }
+    .container-fluid{
+        margin-bottom: 28px;
+    }
+    .header-text{
+        height: 60px;
+    }
+    h2{
+        text-align: start;
+    }
+    .color-boton{
+        width: 80% !important;
+        margin: 0px !important;
+    }
+    .boton-aling{
+        text-align: start;
+    }
+    .boton-credito{
+        width: 100px;
+        margin: none !important;
+    }
+}
+
+
+@media (max-width: 576px) { 
+    h1{
+        font-size: 22px !important;
+    }
+    h2{
+        text-align: start;
+    }
+    .boton-credito{
+        width: 200px;
+        margin: none !important;
+    }
+    .color-boton{
+        width: 80% !important;
+        margin: 0px !important;
+    }
+}
+
+@media (min-width: 768px) { 
+    .boton-credito{
+        width: 180px;
+        margin: none !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .boton-credito{
+        width: 220px;
+        margin: none !important;
+    }
+}
+
+@media (min-width: 1200px) { 
+.boton-credito{
+    width: 300px;
+    margin: none !important;
+}
 }

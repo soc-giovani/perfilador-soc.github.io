@@ -11,18 +11,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   </head>
   <body>
-    <div class="container-fluid">
-    <div class="row">
-        <h1 class="titulo-texto">Perfilador de crédito empresarial</h1>
+    <div class="container-fluid header-text">
+        <div class="row">
+            <h1 class="titulo-texto">Perfilador de crédito empresarial</h1>
+        </div>
     </div>
-</div>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <h2>Elige un producto</h2>
-            
             <div class="col-md-2 boton-aling">
-                <div class="d-grid gap-2">
-                    <button class="btn btn-primary " type="button">Simple Revolvente física</button>
+                <div class="btn-group d-grid gap-2" role="group" aria-label="Basic checkbox toggle button group">
+                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                    <label class="btn btn-outline-primary animacion-boton" for="btncheck1">Simple Revolvente física</label>
                 </div>
             </div>
             <div class="col-md-2 boton-aling">
@@ -57,70 +57,128 @@
             </div>
         </div>
         <div class="row">
+            <div class="col-md-12">
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Selecciona una opción</option>
+                    <option value="1">Simple Revolvente física</option>
+                    <option value="2">Simple Revolvente moral</option>
+                    <option value="3">Arrendamiento física</option>
+                    <option value="4">Arrendamiento moral</option>
+                    <option value="5">Inmueble compra o remodelación física</option>
+                    <option value="6">Inmueble compra o remodelación moral</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
             <h2>Monto solicitado</h2>
             <div class="mb-3">
-                <input type="$" class="form-control" placeholder="$">
+                <input type="$" class="form-control color-boton" placeholder="$">
             </div>
         </div>
         <div class="row">
             <h2>¿Cuál es el uso que le quieres dar al crédito?</h2>
-            <div class="col-md-3 boton-aling">
-                <button class="btn btn-primary " type="button">Adquisición activo fijo</button>
-            </div>
+        </div>
+            <div class="row">
             <div class="col-md-3 boton-aling">
                 <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
                     <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-                    <label class="btn btn-outline-primary animacion-boton" for="btncheck1">Capital trabajo</label>
+                    <label class="btn btn-outline-primary animacion-boton boton-credito" for="btncheck1">Adquisición activo fijo</label>
                 </div>
             </div>
             <div class="col-md-3 boton-aling">
                 <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
                     <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-                    <label class="btn btn-outline-primary animacion-boton" for="btncheck1">Arrendamiento</label>
+                    <label class="btn btn-outline-primary animacion-boton boton-credito" for="btncheck1">Capital trabajo</label>
                 </div>
             </div>
             <div class="col-md-3 boton-aling">
                 <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
                     <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
-                    <label class="btn btn-outline-primary animacion-boton" for="btncheck1">Compra de inmueble</label>
+                    <label class="btn btn-outline-primary animacion-boton boton-credito" for="btncheck1">Arrendamiento</label>
+                </div>
+            </div>
+            <div class="col-md-3 boton-aling">
+                <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                    <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                    <label class="btn btn-outline-primary animacion-boton boton-credito" for="btncheck1">Compra de inmueble</label>
                 </div>
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Selecciona una opción</option>
+                    <option value="1">Adquisición activo fijo</option>
+                    <option value="2">Capital trabajo</option>
+                    <option value="3">Arrendamiento</option>
+                    <option value="4">Compra de inmueble</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <h2>¿Qué tipo de persona eres?</h2>
+            <div class="col-md-3 boton-aling">
+                <div class="btn-group d-grid gap-2" role="group" aria-label="Basic checkbox toggle button group">
+                    <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                    <label class="btn btn-outline-primary animacion-boton" for="btncheck3">Arrendamiento moral</label>
+                </div>
+            </div>
+            <div class="col-md-3 boton-aling">
+                <div class="btn-group d-grid gap-2" role="group" aria-label="Basic checkbox toggle button group">
+                    <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+                    <label class="btn btn-outline-primary animacion-boton" for="btncheck4">Ica</label>
+                </div>
+            </div>
+            <div class="col-md-3 boton-aling">
+                <div class="btn-group d-grid gap-2" role="group" aria-label="Basic checkbox toggle button group">
+                    <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+                    <label class="btn btn-outline-primary animacion-boton" for="btncheck4">Inmueble compra o remodelación física</label>
+                </div>
+            </div>
+            <div class="col-md-3 boton-aling">
+                <div class="btn-group d-grid gap-2" role="group" aria-label="Basic checkbox toggle button group">
+                    <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off">
+                    <label class="btn btn-outline-primary animacion-boton" for="btncheck5">Inmueble compra o remodelación moral</label>
+                </div>
+            </div>
+        </div>
+        
         <div class="row">
             <h2>Ingreso promedio de los últimos 6 meses</h2>
             <div class="mb-3">
-                <input type="$" class="form-control" placeholder="$">
+                <input type="$" class="form-control color-boton" placeholder="$">
             </div>
         </div>
         <div class="row">
             <h2>Porcentaje de utilidad</h2>
             <div class="mb-3">
-                <input type="%" class="form-control" placeholder="%">
+                <input type="%" class="form-control color-boton" placeholder="%">
             </div>
         </div>
         <div class="row">
             <h2>Venta mensual promedio por TPV</h2>
             <div class="mb-3">
-                <input type="$" class="form-control" placeholder="$">
+                <input type="$" class="form-control color-boton" placeholder="$">
             </div>
         </div>
         <div class="row">
             <h2>Gasto promedio mensua</h2>
             <div class="mb-3">
-                <input type="$" class="form-control" placeholder="$">
+                <input type="$" class="form-control color-boton" placeholder="$">
             </div>
         </div>
         <div class="row">
             <h2>Valor actual de la garantía</h2>
             <div class="mb-3">
-                <input type="$" class="form-control" placeholder="$">
+                <input type="$" class="form-control color-boton" placeholder="$">
             </div>
         </div>
         <div class="row">
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <button class="btn btn-primary me-md-2" type="button">Button</button>
-                <button class="btn btn-primary" type="button">Button</button>
-              </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-end">
+                <button class="btn-siguiente btn" type="button"><a class="btn-siguiente-texto" href="tipo-persona.html">Siguiente</a></button>
+            </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
