@@ -101,7 +101,9 @@ h2{
     text-decoration: none;
     color: var(--azul-soc);
     font-weight: 200;
-    font-size: 22px;
+    font-size: 18px;
+    margin-top: 7px;
+    margin-right: 7px;
 }
 
 
