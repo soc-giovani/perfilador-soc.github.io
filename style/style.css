@@ -105,11 +105,11 @@ h2{
     margin-top: 7px;
     margin-right: 7px;
 }
-
+/*-----Vista mobile y desktop----*/
 #vista-mobile{
     display: none;
+    margin-bottom: 25px;
 }
-
 
 /*-----------------MQ-----------------*/
 @media  (max-width: 400px){
@@ -138,6 +138,7 @@ h2{
     }
     #vista-mobile{
         display:contents;
+        margin-bottom: 25px;
     }
     #vista-desktop{
         display: none;
