@@ -122,6 +122,9 @@ h2{
     background-color: var(--boton-seccecionado) !important;
     border-color: var(--boton-seccecionado) !important;
 }
+.form-check-label{
+    color: var(--azul-soc);
+}
 /*-----------------MQ-----------------*/
 @media  (max-width: 400px){
     h1{
