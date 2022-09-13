@@ -4,7 +4,7 @@
     --azul-soc: #015694;
     --verde-soc: #4aa84f;
     --boton: #f1f2f7;
-    --boton-seccecionado:#def4fc;
+    --boton-seccecionado:#d8f5fd;
     --texto-color: #40516f;
 }
 body{
@@ -72,10 +72,10 @@ h2{
     --bs-btn-border-color: none !important;
     background-color: #f1f2f7 !important;
     --bs-btn-border-color: #f1f1f1 !important;
-    --bs-btn-hover-bg: var(--azul-soc) !important;
-    --bs-btn-hover-border-color: #def4fc !important;
-    --bs-btn-active-bg: var(--azul-soc) !important;
-    --bs-btn-active-border-color: var(--azul-soc) !important;
+    --bs-btn-hover-bg: var(--boton-seccecionado) !important;
+    --bs-btn-hover-border-color: var(--boton-seccecionado) !important;
+    --bs-btn-active-bg: var(--boton-seccecionado) !important;
+    --bs-btn-active-border-color: var(--boton-seccecionado) !important;
     --bs-btn-active-color: var(--azul-soc) !important;
     font-size: 12px !important;
     /*--width:230px;--*/
