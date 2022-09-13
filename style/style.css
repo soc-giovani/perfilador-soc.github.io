@@ -5,10 +5,12 @@
     --verde-soc: #4aa84f;
     --boton: #f1f2f7;
     --boton-seccecionado:#def4fc;
+    --texto-color: #40516f;
 }
 body{
     font-family: 'Open Sans';
     text-align: center;
+    color: var(--texto-color);
 }
 .container{
     margin-top: 32px;
@@ -113,7 +115,10 @@ h2{
 .seleccion-mobile{
     margin-left: 0px !important;
 }
-
+.form-check-input:checked{
+    background-color: var(--boton-seccecionado) !important;
+    border-color: var(--boton-seccecionado) !important;
+}
 /*-----------------MQ-----------------*/
 @media  (max-width: 400px){
     h1{
