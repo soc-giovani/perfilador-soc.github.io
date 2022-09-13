@@ -125,6 +125,12 @@ h2{
 .form-check-label{
     color: var(--azul-soc);
 }
+.form-control{
+    color: var(--azul-soc);
+}
+.form-select{
+    color: var(--azul-soc) !important;
+}
 /*-----------------MQ-----------------*/
 @media  (max-width: 400px){
     h1{
