@@ -146,6 +146,9 @@ h2{
     #vista-desktop{
         display: none;
     }
+    .btn-regresar{
+        margin-left: 15px;
+    }
 }
 
 
@@ -170,6 +173,9 @@ h2{
     }
     #vista-desktop{
         display: none;
+    }
+    .btn-regresar{
+        margin-left: 15px;
     }
 }
 
