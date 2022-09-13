@@ -110,6 +110,9 @@ h2{
     display: none;
     margin-bottom: 25px;
 }
+.seleccion-mobile{
+    margin-left: 0px !important;
+}
 
 /*-----------------MQ-----------------*/
 @media  (max-width: 400px){
