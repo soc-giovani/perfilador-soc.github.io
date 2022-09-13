@@ -68,15 +68,15 @@ h2{
     margin-bottom: 18px;
 }
 .animacion-boton{
-    --bs-btn-color: #000000 !important;
+    --bs-btn-color: var(--azul-soc) !important;
     --bs-btn-border-color: none !important;
     background-color: #f1f2f7 !important;
     --bs-btn-border-color: #f1f1f1 !important;
-    --bs-btn-hover-bg: #000000 !important;
+    --bs-btn-hover-bg: var(--azul-soc) !important;
     --bs-btn-hover-border-color: #def4fc !important;
     --bs-btn-active-bg: var(--azul-soc) !important;
     --bs-btn-active-border-color: var(--azul-soc) !important;
-    --bs-btn-active-color: #000000 !important;
+    --bs-btn-active-color: var(--azul-soc) !important;
     font-size: 12px !important;
     /*--width:230px;--*/
 }
@@ -126,7 +126,7 @@ h2{
     color: var(--azul-soc);
 }
 .form-control{
-    color: var(--azul-soc);
+    color: var(--azul-soc) !important;
 }
 .form-select{
     color: var(--azul-soc) !important;
