@@ -137,6 +137,7 @@ h2{
 .form-select{
     color: var(--azul-soc) !important;
 }
+
 /*-----------------MQ-----------------*/
 @media  (max-width: 400px){
     h1{
@@ -216,6 +217,10 @@ h2{
     }
     #vista-desktop{
         display: none;
+    }
+
+    #vistaMobile{
+        margin-bottom: 25px;
     }
 }
 
