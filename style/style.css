@@ -69,7 +69,6 @@ h2{
 .animacion-boton{
     --bs-btn-color: var(--azul-soc) !important;
     --bs-btn-border-color: none !important;
-    background-color: #f1f2f7 !important;
     --bs-btn-border-color: #f1f1f1 !important;
     --bs-btn-hover-bg: var(--boton-seccecionado) !important;
     --bs-btn-hover-border-color: var(--boton-seccecionado) !important;
